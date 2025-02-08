@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 40%;
+            height: 500px;
+            display: grid;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Bier patro</h1>
+    <form action="">
+        <input id="name" name="name" type="text" placeholder="name">
+        <input id="income" name="income" type="text" placeholder="income">
+        <input id="salary" name="salary" type="number" placeholder="salary">
+        <input id="mota" name="mota" type="text" placeholder="mota">
+        <input id="bidesh" type="text" placeholder="bidesh">
+        <input onclick="bia()" type="submit" value="submit">
+    </form>
+    </center>
+    <script>
+        function bia(){
+var income = document.getElementById("income").value;
+var salary = document.getElementById("salary").value;
+var mota = document.getElementById("mota").value;
+var bidesh = document.getElementById("bidesh").value;
+
+
+if(income == "Yes" && salary >= 50000 && mota == "No" && bidesh == "Yes"){
+    alert("Su patro");
+}
+else{
+    alert("Tor shate amar maia bia dmu na");
+}
+        }
+    </script>
+</body>
+</html>
